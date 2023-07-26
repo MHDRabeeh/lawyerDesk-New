@@ -16,16 +16,18 @@ const UserRgChoice = () => {
          className="text-[#407BFF]">Join as us</span>Public, Lawyer or Student<span></span></div>
         <div className=" flex flex-col gap-4 items-center justify-center">
           <div>
-            <button className="text-white font-[700] text-sm   bg-[#407BFF] rounded-full p-2 w-[20rem]
+            <button className="text-white font-[700] text-sm   bg-[#407BFF] rounded-full p-2 w-[20rem] 
              border-2 border-[#407BFF]" onClick={()=>navigate('/enteringNumber')}>Register as Public</button>
           </div>
           <div>
-            <button className="text-[#407BFF] font-[800] text-sm  rounded-full p-2 w-[20rem] border-2
+            <button className="text-[#407BFF] font-[800] text-sm hover:bg-[#407BFF] hover:text-white
+             rounded-full p-2 w-[20rem] border-2 duration-500
              border-[#407BFF]" onClick={()=>navigate('/enteringNumber')}>Register as Lawyer</button>
           </div>
           <div>
             <button className="text-[#407BFF] font-[800] text-sm  rounded-full p-2 w-[20rem] border-2
-             border-[#ffffff]" onClick={()=>navigate('/enteringNumber')}>Register as Student</button>
+            hover:bg-[#407BFF] hover:text-white duration-500
+            border-[#407BFF]" onClick={()=>navigate('/enteringNumber')}>Register as Student</button>
           </div>
         </div>
         <div className="font-[500] text-sm"><span>Already Joined?</span> <span

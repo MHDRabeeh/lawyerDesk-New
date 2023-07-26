@@ -36,7 +36,7 @@ const EnteringNumber = () => {
                         <span className="flex ml-1 "> <img className="w-5 mx-1" src={UsaFlag} alt="" />+1</span>
                         <span className="text-xl text-slate-500"><RiArrowDropDownLine /></span>
                         {/* <button className="tracking-wider">8538783639</button> */}
-                        <input className="tracking-wider border-none" type="tel" placeholder="Mobile Number" />
+                        <input className="numberInput" type="tel" placeholder="Mobile Number" />
                     </div>
                     </div>
                     <div>

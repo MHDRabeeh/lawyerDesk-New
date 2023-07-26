@@ -9,7 +9,6 @@ const SplashScreen = (props) => {
                 </div>
                 <div className="w-[26rem] h-[35rem] rounded-3xl bg-white flex justify-center">
                     {props.children}
-                      
                 </div>
             </div>
         </div>
