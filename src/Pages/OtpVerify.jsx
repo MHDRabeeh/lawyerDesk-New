@@ -3,9 +3,11 @@ import SplashScreen from '../Components/SplashScreen'
 import logo from '../assets/logo.svg'
 import EnterOtp from '../assets/EnterOtp.jpg'
 import sideImage from '../assets/justice-goddess 1.png'
+import { useNavigate } from 'react-router-dom'
 
 
 const OtpVerify = () => {
+  const navigate = useNavigate()
   const   renterInput= ()=>{
     return  <input maxLength={1} className='border w-10 h-10 rounded-full text-center text-xl ' type="text" />
   }
@@ -38,7 +40,7 @@ const OtpVerify = () => {
             {renterInput()}
           </div>
           <div>
-            <button onClick={() => navigate('#')} className="text-white font-[700] text-sm   bg-[#407BFF] rounded-full p-2 w-[20rem]
+            <button onClick={() => navigate('/Home')} className="text-white font-[700] text-sm   bg-[#407BFF] rounded-full p-2 w-[20rem]
                          border-2 border-[#407BFF]">Verify OTP</button>
           </div>
         </div>
