@@ -18,7 +18,7 @@ const Home = () => {
                 <div className='w-[100%] bg-gray-500] mt-4  h-[84%] grid grid-cols-2 gap-3'>
 
 
-                    <div className=' overflow-y-scroll '>
+                    <div className=' overflow-y-scroll'>
                         <div className='h-[20vh] w-[100%] bg-white rounded-3xl flex flex-col justify-evenly items-center'>
                             <div className='w-[100%] flex justify-evenly items-center '>
                                 <ProfilePhoto image={image1} />
