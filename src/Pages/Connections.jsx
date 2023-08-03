@@ -12,11 +12,11 @@ const Connections = () => {
     return (
         <>
             <Wrapper TaskBarData={TaskBarData}>
-                <div className="p-2 ">
+                <div className="p-1 ">
                     <span className="text-xl font-bold">Connection Requests</span>
-                    <div className="grid grid-cols-3 gap-4 mt-3">
-                        {
-                            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
+                    <div className="grid grid-cols-3 gap-4 mt-1  h-72 overflow-y-auto scrollbar-hide">
+                        { 
+                            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ,1,1,1,1,1,1,1].map((item, index) => (
                                 <>
                                     <ConxRequests key={index} />
                                 </>
@@ -24,7 +24,7 @@ const Connections = () => {
                         }
                     </div>
                     <div className="p-1 text-xl font-bold mt-1"> Connection Suggestions</div>
-                    <div className="snapp grid grid-flow-col gap-3 overflow-auto">
+                    <div className="snapp grid grid-flow-col gap-3 overflow-auto scrollbar-hide">
                         {
                             [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
                                 <>

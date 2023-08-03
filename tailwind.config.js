@@ -8,6 +8,7 @@ export default {
     extend: {},
   },
   plugins: [
+    require('tailwind-scrollbar-hide'),
     require('flowbite/plugin')
 ]
 }
