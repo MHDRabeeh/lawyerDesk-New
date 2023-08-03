@@ -8,14 +8,20 @@ import { BsCameraVideo } from "react-icons/bs";
 import { IoImageOutline } from "react-icons/io5";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { FaSlidersH } from "react-icons/fa";
+import Wrapper from '../Components/Wrapper'
+import { FiFileText } from "react-icons/fi";
+import { BsFileEarmarkText } from "react-icons/bs";
 
 const Home = () => {
+    const TaskBarData = {
+        title:"News",
+        path :'',
+        icon:<FiFileText/>
+    }
     return (
-        <div className='w-full h-screen bg-[#F3F5F9] flex gap-5 '>
-            <Navbar />
-            <div className='w-[79vw]'>
-                <TaskBar />
-                <div className='w-[100%] bg-gray-500] mt-4  h-[84%] grid grid-cols-2 gap-3'>
+       
+            <Wrapper TaskBarData={TaskBarData}>
+                <div className=' grid grid-cols-2 gap-3'>
 
 
                     <div className=' overflow-y-scroll'>
@@ -56,11 +62,12 @@ const Home = () => {
                     <div className=''>
                     </div>
                 </div>
-            </div>
+                </Wrapper>
+            
 
 
 
-        </div>
+        
     )
 }
 

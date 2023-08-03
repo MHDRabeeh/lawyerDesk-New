@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ProfilePhoto = ({image}) => {
+const ProfilePhoto = ({image,size}) => {
     return (
         <>
             <img
-                className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                className={`inline-block ${size?size:"h-12 w-12"}  rounded-full ring-2 ring-white`}
                 src={image}
                 alt=""
             />
