@@ -14,7 +14,7 @@ const Connections = () => {
             <Wrapper TaskBarData={TaskBarData}>
                 <div className="p-1 ">
                     <span className="text-xl font-bold">Connection Requests</span>
-                    <div className="grid grid-cols-3 gap-4 mt-1  h-72 overflow-y-auto scrollbar-hide">
+                    <div className="grid grid-cols-3 gap-4 mt-1  h-72 overflow-auto scrollbar-hide  ">
                         { 
                             [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ,1,1,1,1,1,1,1].map((item, index) => (
                                 <>

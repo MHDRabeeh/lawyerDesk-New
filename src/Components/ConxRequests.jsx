@@ -8,14 +8,18 @@ const ConxRequests = () => {
         <div className='w-[] h-16 bg-white rounded-2xl flex  justify-center items-center '>
             <div className='w-[96%] h-14  flex items-center justify-between'>
 
-                <div className=' flex '>
-                    <div className='flex justify-center items-center '>
-                        <ProfilePhoto image={avatarOne} />  
+                <div className=' flex  flex-col '>
+                    <div className='flex justify-center items-center gap-2 '>
+                        <ProfilePhoto image={avatarOne} />
+                        <div>
+                            <div className=''><span className='font-bold'>Elon Musk </span><span className='text-xs ml-2 text-[#A7A9B7]'>2 days ago</span></div>
+                            <div className='flex flex-col justify-center'>
+                                <span className='text-xs  text-[#A7A9B7]'>Business man</span>
+                            </div>
+                        </div>
+
                     </div>
-                    <div className='flex flex-col justify-center items-center ml-3'>
-                        <div className='mt-2'><span className='font-bold'>Elon Musk </span><span className='text-xs ml-4 text-[#A7A9B7]'>2 days ago</span></div>
-                        <span className='text-xs ml-4 text-[#A7A9B7]'>Business man</span>
-                    </div>
+
 
 
                 </div>
