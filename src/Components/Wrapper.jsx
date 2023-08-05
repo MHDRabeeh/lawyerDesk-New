@@ -11,7 +11,7 @@ const Wrapper = ({children,TaskBarData}) => {
             <Navbar  />
             <div className='w-[79vw]'>
                 <TaskBar TaskBarData={TaskBarData} />
-                <div className='w-[100%] mt-4  h-[84%]'>
+                <div className='w-[100%] mt-2  h-[84%]'>
                         {children}
                   
                 </div>

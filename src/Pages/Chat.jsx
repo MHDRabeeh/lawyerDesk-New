@@ -12,12 +12,13 @@ const Chat = () => {
     }
   return (
   <Wrapper TaskBarData={TaskBarData}>
+    <p className='ml-2'>Chat </p>
     <div className='grid grid-cols-8 gap-3'>
-        <div className='col-span-3 bg-white h-[84vh] rounded-3xl '>
+        <div className='col-span-3 bg-white h-[82vh] rounded-3xl '>
             <ChatSearch/>
-            <div className='mt-4 h-[85%] w-[100%] flex flex-col gap-3 items-center overflow-auto scrollbar-hide '>
+            <div className='mt-4 h-[84%] w-[100%] flex flex-col gap-3 items-center overflow-auto scrollbar-hide '>
                 {
-                    [1,2,3,3,3,3].map((item,i)=>(
+                    [1,2,3,3,3,3,3,3,].map((item,i)=>(
                         <ChatCard key={i}/>
                     ))
                 }
