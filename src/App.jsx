@@ -7,6 +7,7 @@ import OtpVerify from './Pages/OtpVerify'
 import Home from './Pages/Home'
 import Connections from './Pages/Connections'
 import FindLawyer from './Pages/FindLawyer'
+import LawyerProfile from './Pages/LawyerProfile'
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/otpverify' element={<OtpVerify />} />
           <Route path='/connections' element={<Connections/>} />
           <Route path='/findLawyer' element={<FindLawyer/>}/>
+          <Route path='/lawyerProfile' element={<LawyerProfile/>}/>
         </Routes>
       </div>
     </>

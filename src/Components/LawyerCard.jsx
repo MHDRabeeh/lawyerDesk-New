@@ -1,23 +1,15 @@
 import ProfilePhoto from "./ProfilePhoto"
-import { BsStarFill } from "react-icons/bs";
 import avathar from '../assets/avatar.jpg'
 import { GrLocation } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
 import { AiFillMessage } from "react-icons/ai";
-
 import { AiTwotoneStar, AiTwotoneSetting } from "react-icons/ai";
 import { TbSphere } from "react-icons/tb";
 import Specialized from "./Specialized";
+import StarRating from "./StarRating";
 
 
 const LawyerCard = () => {
-
-    const returnStar = () => {
-        return <span className="flex gap-1 p-1 justify-center items-center text-white rounded-full bg-[#407BFF]"><BsStarFill /></span>
-    }
-
-
-
     const text = "Harish Salve KC is an Indian senior advocate who practices at the Supreme Court of India. He served as the Solicitor General of India from 1 November 1999 to 3 November 2002. He also fought the case of Kulbhushan Jadhav at the International Court of Justice."
 
     return (
@@ -33,10 +25,8 @@ const LawyerCard = () => {
                             <div className=" font-extralight  flex items-center"><span className="ml-1 text-xl "><IoLocationOutline className="text-[#407BFF]" /></span><span className="text-sm text-[#A7A9B7]">New Delhi, India</span></div>
                         </div>
                         <div className="flex gap-2">
-
-                            {returnStar()}
-                            {returnStar()}
-                            {returnStar()}
+                            {/* added StarRating component */}
+                          <StarRating/>
                         </div>
                     </div>
                 </div>
