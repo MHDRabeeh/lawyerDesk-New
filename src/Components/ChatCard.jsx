@@ -8,8 +8,9 @@ function ChatCard() {
         <div className="w-[98%] border  rounded-2xl h-20 flex items-center">
             <div className=" mx-auto h-20 flex items-center w-[98%] justify-between">
                 <div className="flex gap-2 items-center  ">
-                    <div className="flex">
+                    <div className="flex items-center relative">
                         <ProfilePhoto image={avatar} size={`w-16 h-16`} />
+                        <p className="text-8xl absolute top-[.3rem] text-lime-500 left-10">•</p>
                     </div>
                     <div>
                         <p className="font-bold">Elon Musk</p>
