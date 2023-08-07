@@ -149,10 +149,11 @@ const LawyerProfile = () => {
                 <p className="font-bold text-lg mt-4">Personal Interests </p>
 
                 <div className="w-56 flex gap-2">
-                    <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">Reading</span></div>
-                    <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">History</span></div>
-                    <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">Travel</span></div>
-                    <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">Sports</span></div>
+                    {
+                        ["Reading" ,"History" ,"Travel","Sports"].map((item)=>(
+                            <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">{item}</span></div>
+                        ))
+                    }
                 </div>
 
             </div>

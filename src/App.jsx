@@ -9,6 +9,7 @@ import Connections from './Pages/Connections'
 import FindLawyer from './Pages/FindLawyer'
 import LawyerProfile from './Pages/LawyerProfile'
 import Chat from './Pages/Chat'
+import Notification from './Pages/Notification'
 function App() {
   return (
     <>
@@ -18,10 +19,11 @@ function App() {
           <Route path='/Home' element={<Home />} />
           <Route path='/enteringNumber' element={<EnteringNumber />} />
           <Route path='/otpverify' element={<OtpVerify />} />
-          <Route path='/connections' element={<Connections/>} />
-          <Route path='/findLawyer' element={<FindLawyer/>}/>
-          <Route path='/lawyerProfile' element={<LawyerProfile/>}/>
-          <Route  path='/chat' element={<Chat/>}/>
+          <Route path='/connections' element={<Connections />} />
+          <Route path='/findLawyer' element={<FindLawyer />} />
+          <Route path='/lawyerProfile' element={<LawyerProfile />} />
+          <Route path='/chat' element={<Chat />} />
+          <Route path='/notifications' element={<Notification />}/>
         </Routes>
       </div>
     </>

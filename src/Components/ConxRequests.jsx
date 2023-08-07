@@ -8,7 +8,7 @@ const ConxRequests = () => {
         <div className='w-[] h-16 bg-white rounded-2xl flex  justify-center items-center '>
             <div className='w-[96%] h-14  flex items-center justify-between'>
 
-                <div className=' flex  flex-col '>
+                <div className=' flex  flex-col'>
                     <div className='flex justify-center items-center gap-2 '>
                         <ProfilePhoto image={avatarOne} />
                         <div>
@@ -17,11 +17,7 @@ const ConxRequests = () => {
                                 <span className='text-xs  text-[#A7A9B7]'>Business man</span>
                             </div>
                         </div>
-
                     </div>
-
-
-
                 </div>
                 <div className='flex gap-3 text-2xl'> <span><FcCheckmark /></span>
                     <span className='text-red-500'><RxCross2 /></span>
