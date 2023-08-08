@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiSolidUserVoice, BiSolidBookReader, BiSolidPencil } from "react-icons/bi";
+import { LuEdit2 } from "react-icons/lu";
 
 
 
@@ -14,7 +15,11 @@ const Languages = () => {
     ]
     return (
         <div className='w-[90%] h-[97%]'>
+            <div className='w-[95%] flex justify-between mx-auto'>
+
             <p className='font-semibold p-3 text-lg'>Languages</p>
+            <span><LuEdit2 className="text-[#407BFF] text-xl mt-2"/></span>
+            </div>
             <div className='flex flex-col gap-3 justify-evenly items-center'>
                 {langKnowlodge.map((item,i) => (
                     <div key={i} className='grid grid-cols-4 gap-1 justify-around'>

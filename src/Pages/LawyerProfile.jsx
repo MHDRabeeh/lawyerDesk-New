@@ -11,22 +11,24 @@ import { FiShoppingBag } from 'react-icons/fi'
 import { LiaGreaterThanSolid } from 'react-icons/lia'
 import Specialized from "../Components/Specialized";
 import { SlLocationPin } from "react-icons/sl";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineCamera } from "react-icons/ai";
 import Languages from "../Components/Languages";
 import { TbPointFilled } from 'react-icons/tb'
 import NotableCases from "../Components/NotableCases";
 import ClientTestimonials from "../Components/ClientTestimonials";
 import ProfessionalAffiliations from "../Components/ProfessionalAffiliations";
 import PublicationsMedia from "../Components/PublicationsMedia";
+import { LuEdit2 } from "react-icons/lu";
+
 
 
 
 const LawyerProfile = () => {
     const TaskBarData = {
-        title: "Manage Connections",
+        title: "Lawyer Profile",
         path: '/lawyerProfile',
         icon: <MdGavel />,
-        parentPath:'Home'
+        parentPath: 'Home'
     }
     const text1 = "Joseph Cotchett is one of the most respected lawyers in the modern American legal landscape, but he maintains a humble approach to law that places the issues well above paychecks. Cotchett defends anyone he feels needs defense, regardless of their background "
     const ProfileItems = [{ icon: <IoMdPersonAdd />, title: "Connect" }, { icon: <BiSolidMessageRounded />, title: "Message" }, { icon: <BsFileEarmarkTextFill />, title: "Feed" }, { icon: <PiShareFatFill />, title: "Share" },]
@@ -37,11 +39,14 @@ const LawyerProfile = () => {
                     <div className=" h-[75vh] flex flex-col gap-3">
                         <div className="h-[40%] bg-white rounded-3xl">
                             <div className="flex items-center gap-3 p-2">
-                                <div>
+                                <div className="relative">
+                                    <div className="bg-black rounded-full flex justify-center absolute p-1 right-0 top-[97px] border-white">
+                                        <span className=" text-2xl  text-white"><AiOutlineCamera /></span>
+                                    </div>
                                     <ProfilePhoto image={avatar} size={`h-32 w-32`} />
                                 </div>
                                 <div className="flex flex-col gap-2 ">
-                                    <div><p className="text-2xl font-bold">Joseph cothett</p></div>
+                                    <div className="flex justify-between"><p className="text-2xl font-bold ">Joseph cothett</p> <span><LuEdit2 className="text-[#407BFF] text-xl" /></span> </div>
                                     <div><p className="text-sm text-[#A7A9B7]">Family,Corporate,Property Expert</p></div>
                                     <div className="flex gap-2 "><StarRating /></div>
                                 </div>
@@ -65,7 +70,8 @@ const LawyerProfile = () => {
 
 
                         <div className="h-[50%] bg-white rounded-3xl flex flex-col  justify-evenly ">
-                            <p className="p-2 font-bold ">Specialized In</p>
+                            <div className="flex justify-between w-[95%] mx-auto"> <p className="p-2 font-bold ">Specialized In</p><span><LuEdit2 className="text-[#407BFF] text-xl" /></span></div>
+
                             <div className="flex gap-2 justify-start ml-4">
                                 <Specialized />
                             </div>
@@ -83,7 +89,11 @@ const LawyerProfile = () => {
                     <div className="h-[75vh] flex flex-col gap-3">
                         <div className="bg-white h-[35%] rounded-3xl grid place-items-center">
                             <div className="w-[90%] mx-auto flex flex-col justify-between h-[80%] ">
-                                <p className="font-bold">Bar Admissions(Jurisdictions)</p>
+                                <div className="flex w-[95%] mx-auto justify-between">
+
+                                    <p className="font-bold">Bar Admissions(Jurisdictions)</p>
+                                    <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+                                </div>
                                 <div className="grid grid-cols-2 gap-3">
                                     <div className="bg-[#407BFf] text-white p-2 rounded-3xl text-sm font-medium text-center">Bombay High Court</div>
                                     <div className="bg-[#407BFf] text-white p-2 rounded-3xl text-sm font-medium text-center">Up High Court</div>
@@ -107,8 +117,10 @@ const LawyerProfile = () => {
                         </div>
                     </div>
                     <div className="bg-white h-[75vh] rounded-3xl  ">
-                        <div>
+                        <div className="w-[96%] flex justify-between mx-auto items-center">
                             <p className="p-3 font-bold text-lg">Notable Cases</p>
+                            <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+
                         </div>
 
                         <div className="grid  grid-cols-1 w-[95%] h-[90%] mx-auto gap-3 justify-evenly">
@@ -119,7 +131,10 @@ const LawyerProfile = () => {
                 <div className="flex  gap-4 mt-4" >
 
                     <div className=" w-1/3 rounded-3xl bg-white h-48 mt-6 p-2">
-                        <p className="font-bold text-lg">Education</p>
+                        <div className="flex w-[96%] justify-between mx-auto">
+                            <p className="font-bold text-lg">Education</p>
+                            <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+                        </div>
                         <div>
                             <div className="flex items-center"><span className=" text-[#407BFf] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">University of San Francisco school of law</p>
 
@@ -147,11 +162,15 @@ const LawyerProfile = () => {
 
                 <ProfessionalAffiliations />
                 <PublicationsMedia />
-                <p className="font-bold text-lg mt-4">Personal Interests </p>
+                <div className="flex gap-2 items-center">
+
+                    <p className="font-bold text-lg mt-4">Personal Interests </p>
+                    <span><LuEdit2 className="text-[#407BFF] text-xl mt-2" /></span>
+                </div>
 
                 <div className="w-56 flex gap-2">
                     {
-                        ["Reading" ,"History" ,"Travel","Sports"].map((item)=>(
+                        ["Reading", "History", "Travel", "Sports"].map((item) => (
                             <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">{item}</span></div>
                         ))
                     }
