@@ -10,6 +10,7 @@ import FindLawyer from './Pages/FindLawyer'
 import LawyerProfile from './Pages/LawyerProfile'
 import Chat from './Pages/Chat'
 import Notification from './Pages/Notification'
+import LawLibrary from './Pages/LawLibrary'
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <Route path='/lawyerProfile' element={<LawyerProfile />} />
           <Route path='/chat' element={<Chat />} />
           <Route path='/notifications' element={<Notification />}/>
+          <Route path='/lawLibrary' element={<LawLibrary/>}/>
         </Routes>
       </div>
     </>

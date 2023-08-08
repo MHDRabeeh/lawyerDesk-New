@@ -7,7 +7,8 @@ const Connections = () => {
     const TaskBarData = {
         title:"Manage Connections",
         path :'/connections',
-        icon:<FaUsers/>
+        icon:<FaUsers/>,
+        parentPath:'Home'
     }
     return (
         <>

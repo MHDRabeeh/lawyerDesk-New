@@ -10,13 +10,13 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { FaSlidersH } from "react-icons/fa";
 import Wrapper from '../Components/Wrapper'
 import { FiFileText } from "react-icons/fi";
-import { BsFileEarmarkText } from "react-icons/bs";
 
 const Home = () => {
     const TaskBarData = {
         title:"News",
         path :'',
-        icon:<FiFileText/>
+        icon:<FiFileText/>,
+        parentPath:'Home'
     }
     return (
        

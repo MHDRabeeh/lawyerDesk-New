@@ -25,7 +25,8 @@ const LawyerProfile = () => {
     const TaskBarData = {
         title: "Manage Connections",
         path: '/lawyerProfile',
-        icon: <MdGavel />
+        icon: <MdGavel />,
+        parentPath:'Home'
     }
     const text1 = "Joseph Cotchett is one of the most respected lawyers in the modern American legal landscape, but he maintains a humble approach to law that places the issues well above paychecks. Cotchett defends anyone he feels needs defense, regardless of their background "
     const ProfileItems = [{ icon: <IoMdPersonAdd />, title: "Connect" }, { icon: <BiSolidMessageRounded />, title: "Message" }, { icon: <BsFileEarmarkTextFill />, title: "Feed" }, { icon: <PiShareFatFill />, title: "Share" },]

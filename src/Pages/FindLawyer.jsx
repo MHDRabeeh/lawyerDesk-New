@@ -7,7 +7,8 @@ const FindLawyer = () => {
   const TaskBarData = {
     title: "Find Lawyer",
     path: '/findLawyer',
-    icon: <FaUserTie/>
+    icon: <FaUserTie/>,
+    parentPath:'Home'
   }
   return (
     <Wrapper TaskBarData={TaskBarData} >

@@ -9,7 +9,8 @@ const Chat = () => {
     const TaskBarData = {
         title: "Chat",
         path: '/chat',
-        icon: <BiSolidMessageDetail />
+        icon: <BiSolidMessageDetail />,
+        parentPath:'Home'
     }
     return (
         <Wrapper TaskBarData={TaskBarData}>

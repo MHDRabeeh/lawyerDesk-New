@@ -4,7 +4,7 @@ import image1 from '../assets/Profile_1.jpg'
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 
-const TaskBar = ({ TaskBarData: { title, icon, path } }) => {
+const TaskBar = ({ TaskBarData: { title, icon, path,parentPath } }) => {
     const navigate = useNavigate()
 
     return (
@@ -20,7 +20,7 @@ const TaskBar = ({ TaskBarData: { title, icon, path } }) => {
                     </div>
                     <div>
                         <p className='text-xl font-[600] tracking-wide'>{title}</p>
-                        <div className='ml-1 text-xs font-semibold'><span className='text-[#A7A9B7]'>Home</span><span className='text-[#407BFF]'>{path}</span></div>
+                        <div className='ml-1 text-xs font-semibold'><span className='text-[#A7A9B7]'>{parentPath}</span><span className='text-[#407BFF]'>{path}</span></div>
                     </div>
 
                 </div>
@@ -29,7 +29,7 @@ const TaskBar = ({ TaskBarData: { title, icon, path } }) => {
                     <div>
                         <p className='' onClick={() => navigate('/notifications')}><IoIosNotificationsOutline className='h-8 w-12 cursor-pointer' /></p>
                     </div>
-                    <div>
+                    <div onClick={()=>navigate('/lawyerProfile')}>
                         <ProfilePhoto image={image1} />
                     </div>
                 </div>
