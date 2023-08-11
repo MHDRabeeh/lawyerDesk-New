@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { createContext, useState } from 'react'
 import Wrapper from '../Components/Wrapper'
 
 import OngoingResearches from '../Components/OngoingResearches';
@@ -16,12 +16,15 @@ const LawLibrary = () => {
     }
     const [page, setPage] = useState(false)
     const [HistoryPage, setHistoryPage] = useState(true)
+    const SetPageContext = createContext()
 
     const handleHistoryPage = (value) => {
         value ? setHistoryPage(value) : setHistoryPage(value)
     }
     return (
         <Wrapper TaskBarData={TaskBarData} >
+            <SetPageContext.Provider value={setPage}>
+
             {
                 page ? (<LawLbryquery setPage={setPage} />) : (
                     <>
@@ -36,6 +39,7 @@ const LawLibrary = () => {
 
                 )
             }
+            </SetPageContext.Provider>
 
 
         </Wrapper>

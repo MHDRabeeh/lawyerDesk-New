@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { FaSlidersH } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { AiFillMessage } from "react-icons/ai";
@@ -6,7 +6,9 @@ import { BiCheck } from "react-icons/bi";
 import LawLbryquery from './LawLbryquery';
 
 
+
 const LawLbryHistory = ({setPage}) => {
+   
    
     
     return (
