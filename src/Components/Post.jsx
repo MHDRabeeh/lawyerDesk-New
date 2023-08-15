@@ -6,7 +6,8 @@ import post from '../assets/post.jpg'
 import { AiTwotoneHeart } from "react-icons/ai";
 import { FaRegComment } from 'react-icons/fa'
 import { BiShareAlt } from 'react-icons/bi'
-import { BsBookmark } from 'react-icons/bs'
+import { BsBookmark, BsEmojiSmile } from 'react-icons/bs'
+import {VscSend} from 'react-icons/vsc'
 
 
 const Post = () => {
@@ -62,7 +63,7 @@ const Post = () => {
         {showComment &&
           <>
             <hr class="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <div className='w-[100%] h-[30vh] bg-white'>
+            <div className='w-[100%] h-[35vh] bg-white'>
               <p className='text-[#a7a9b7] m-2 font-medium'>2600 comments</p>
               <div className='flex justify-start items-start gap-1'>
                 <div>
@@ -99,6 +100,14 @@ const Post = () => {
                   </div>
 
                 </div>
+              </div>
+              <div className='flex mt-3 relative items-center gap-1'>
+                <div>
+                  <ProfilePhoto  image={image1} size={`w-7`}/>
+                </div>
+                <span className='absolute left-[2.28rem] top-[.4rem]'><BsEmojiSmile className='text-slate-300 ' size={20} /></span>
+                <input className=' w-[93%] rounded-3xl placeholder-slate-300 font-light text-sm border-slate-200  h-8 px-7' type="text" placeholder='Leave your thoughts here....'/>
+                <span className='absolute right-4 text-slate-300 '><VscSend size={20}/></span>
               </div>
             </div>
             
