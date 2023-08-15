@@ -29,9 +29,7 @@ const Chat = () => {
                 </div>
 
                 <div className='col-span-5 bg-white h-[81vh] rounded-3xl  '>
-
                     <ChatMessage />
-
                 </div>
             </div>
         </Wrapper>
