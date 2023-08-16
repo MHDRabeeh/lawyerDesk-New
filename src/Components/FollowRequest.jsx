@@ -21,7 +21,7 @@ const FollowRequest = () => {
                     </div>
                     <div className='flex gap-2'>
                         <div className='px-10 py-2 rounded-3xl text-xs bg-blue-200'><button className='font-semibold'>cancel</button></div>
-                        <div className='px-10 py-2 rounded-3xl text-xs bg-[#407BFF]'><button className='font-semibold text-white'>Accept</button></div>
+                        <div className='px-10 py-2 rounded-3xl text-xs bg-[#147BF5]'><button className='font-semibold text-white'>Accept</button></div>
                     </div>
                 </div>
                 <div className='absolute top-5 right-4 text-[#A7A9B7] text-xs'>14:00</div>

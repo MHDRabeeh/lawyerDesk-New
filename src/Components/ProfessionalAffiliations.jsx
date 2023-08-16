@@ -9,7 +9,7 @@ const ProfessionalAffiliations = () => {
         <>
         <div className='w-[95%] flex gap-2 mt-1'>
         <p className="font-bold text-lg">Publications & Media Appearances</p>
-        <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+        <span><LuEdit2 className="text-[#147BF5] text-xl" /></span>
 
         </div>
         <div className=" h-44 w-[79vw] rounded-3xl mt-4 overflow-y-auto scrollbar-hide snapp grid grid-flow-col gap-3 place-items-center">

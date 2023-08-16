@@ -12,7 +12,7 @@ const TaskBar = ({ TaskBarData: { title, icon, path,parentPath } }) => {
 
             <div className='w-[97%] h-20 flex justify-between items-center mx-auto'>
                 <div className='flex justify-between gap-3 items-center'>
-                    <div className=' bg-[#407BFF]  p-3 rounded-full'>
+                    <div className=' bg-[#147BF5]  p-3 rounded-full'>
 
                         <span className='text-xl  text-white h-5 w-5 font-extrabold'>
                             {icon}
@@ -20,7 +20,7 @@ const TaskBar = ({ TaskBarData: { title, icon, path,parentPath } }) => {
                     </div>
                     <div>
                         <p className='text-xl font-[600] tracking-wide'>{title}</p>
-                        <div className='ml-1 text-xs font-semibold'><span className='text-[#A7A9B7]'>{parentPath}</span><span className='text-[#407BFF]'>{path}</span></div>
+                        <div className='ml-1 text-xs font-semibold'><span className='text-[#A7A9B7]'>{parentPath}</span><span className='text-[#147BF5]'>{path}</span></div>
                     </div>
 
                 </div>

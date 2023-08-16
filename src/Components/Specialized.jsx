@@ -22,7 +22,7 @@ const Specialized = () => {
        {
                     SpecializedData.map((item, index) => (
                         
-                            <button key={index} className="flex items-center text-xs border p-1 font-semibold border-[#407BFF] rounded-3xl text-[#407BFF] "><span className="text-base"> {item.icon}</span>{item.title}</button>
+                            <button key={index} className="flex items-center text-xs border p-1 font-semibold border-[#147BF5] rounded-3xl text-[#147BF5] "><span className="text-base"> {item.icon}</span>{item.title}</button>
                         
                     ))
                 }

@@ -46,7 +46,7 @@ const LawyerProfile = () => {
                                     <ProfilePhoto image={avatar} size={`h-32 w-32`} />
                                 </div>
                                 <div className="flex flex-col gap-2 ">
-                                    <div className="flex justify-between"><p className="text-2xl font-bold ">Joseph cothett</p> <span><LuEdit2 className="text-[#407BFF] text-xl" /></span> </div>
+                                    <div className="flex justify-between"><p className="text-2xl font-bold ">Joseph cothett</p> <span><LuEdit2 className="text-[#147BF5] text-xl" /></span> </div>
                                     <div><p className="text-sm text-[#A7A9B7]">Family,Corporate,Property Expert</p></div>
                                     <div className="flex gap-2 "><StarRating /></div>
                                 </div>
@@ -54,7 +54,7 @@ const LawyerProfile = () => {
                             <div className="w-[95%] flex gap-2 justify-center items-center ml-1">
                                 {
                                     ProfileItems.map((item, i) => (
-                                        <div key={i} className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"><span>{item.icon}</span> <span className="text-sm">{item.title}</span></div>
+                                        <div key={i} className="flex gap-1 items-center p-2 bg-[#147BF5] rounded-3xl text-white"><span>{item.icon}</span> <span className="text-sm">{item.title}</span></div>
                                     ))
                                 }
 
@@ -62,7 +62,7 @@ const LawyerProfile = () => {
                         </div>
                         <div className="h-[10%] bg-white rounded-3xl flex items-center justify-center ">
                             <div className="flex gap-4 justify-between relative">
-                                <div className="flex gap-2"><span classNamFe="text-lg text-[#A7A9B7]">Total case</span><span className="text-[#407BFF] text-2xl"><FiShoppingBag /></span><span className="text-xl font-bold">124</span></div>
+                                <div className="flex gap-2"><span classNamFe="text-lg text-[#A7A9B7]">Total case</span><span className="text-[#147BF5] text-2xl"><FiShoppingBag /></span><span className="text-xl font-bold">124</span></div>
                                 <div className="flex gap-2"><span className="text-lg text-[#A7A9B7]">Top Rated</span><span className="text-yellow-200 text-2xl"><BsFillStarFill /></span><span className="text-xl font-bold">3.5</span></div>
                                 <div className="flex items-center text-[#A7A9B7]"><span className=" "><LiaGreaterThanSolid /></span></div>
                             </div>
@@ -70,7 +70,7 @@ const LawyerProfile = () => {
 
 
                         <div className="h-[50%] bg-white rounded-3xl flex flex-col  justify-evenly ">
-                            <div className="flex justify-between w-[95%] mx-auto"> <p className="p-2 font-bold ">Specialized In</p><span><LuEdit2 className="text-[#407BFF] text-xl" /></span></div>
+                            <div className="flex justify-between w-[95%] mx-auto"> <p className="p-2 font-bold ">Specialized In</p><span><LuEdit2 className="text-[#147BF5] text-xl" /></span></div>
 
                             <div className="flex gap-2 justify-start ml-4">
                                 <Specialized />
@@ -79,10 +79,10 @@ const LawyerProfile = () => {
                                 <p className="text-xs leading-5 text-justify">{text1}</p>
                             </div>
                             <div className=" flex justify-around">
-                                <div className="flex gap-2"><span className=""><SlLocationPin className="text-[#407BFf]" /></span><span className="text-xs text-[#A7A9B7]">California,United States</span></div>
-                                <div className="flex gap-2"><span className=""><BsTelephone className="text-[#407BFf]" /></span><span className="text-xs text-[#A7A9B7]">+91 8394749372</span></div>
+                                <div className="flex gap-2"><span className=""><SlLocationPin className="text-[#147BF5]" /></span><span className="text-xs text-[#A7A9B7]">California,United States</span></div>
+                                <div className="flex gap-2"><span className=""><BsTelephone className="text-[#147BF5]" /></span><span className="text-xs text-[#A7A9B7]">+91 8394749372</span></div>
                             </div>
-                            <div className=" flex gap-2 ml-9"><span className=""><AiOutlineMail className="text-[#407BFf]" /></span><span className="text-xs text-[#A7A9B7]">joseph@lawyerdesk.in</span></div>
+                            <div className=" flex gap-2 ml-9"><span className=""><AiOutlineMail className="text-[#147BF5]" /></span><span className="text-xs text-[#A7A9B7]">joseph@lawyerdesk.in</span></div>
                         </div>
 
                     </div>
@@ -92,13 +92,13 @@ const LawyerProfile = () => {
                                 <div className="flex w-[95%] mx-auto justify-between">
 
                                     <p className="font-bold">Bar Admissions(Jurisdictions)</p>
-                                    <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+                                    <span><LuEdit2 className="text-[#147BF5] text-xl" /></span>
                                 </div>
                                 <div className="grid grid-cols-2 gap-3">
-                                    <div className="bg-[#407BFf] text-white p-2 rounded-3xl text-sm font-medium text-center">Bombay High Court</div>
-                                    <div className="bg-[#407BFf] text-white p-2 rounded-3xl text-sm font-medium text-center">Up High Court</div>
-                                    <div className="bg-[#407BFf] text-white p-2 rounded-3xl text-sm font-medium text-center">Kerala high Court</div>
-                                    <div className="bg-[#407BFf] text-white p-2 rounded-3xl text-sm font-medium text-center">Delhi high Court</div>
+                                    <div className="bg-[#147BF5] text-white p-2 rounded-3xl text-sm font-medium text-center">Bombay High Court</div>
+                                    <div className="bg-[#147BF5] text-white p-2 rounded-3xl text-sm font-medium text-center">Up High Court</div>
+                                    <div className="bg-[#147BF5] text-white p-2 rounded-3xl text-sm font-medium text-center">Kerala high Court</div>
+                                    <div className="bg-[#147BF5] text-white p-2 rounded-3xl text-sm font-medium text-center">Delhi high Court</div>
                                 </div>
 
                             </div>
@@ -111,15 +111,15 @@ const LawyerProfile = () => {
                                 <div className="p-3 border-b border-slate-100">
                                     <p className=" font-bold">Professional Endorsements</p>
                                 </div>
-                                <div className="flex mt-"><span className=" text-[#407BFf] text-2xl"><TbPointFilled /></span><span className="text-sm font-bold">Corporate Law</span></div>
-                                <div className=" w-[95%] mx-auto flex items-center justify-between"><span className="text-xs text-[#A7A9B7] font-semibold ml-4">10 Endorsements|5 Recommendations</span><span className="text-2xl text-[#407BFf]"><BsEye /></span></div>
+                                <div className="flex mt-"><span className=" text-[#147BF5] text-2xl"><TbPointFilled /></span><span className="text-sm font-bold">Corporate Law</span></div>
+                                <div className=" w-[95%] mx-auto flex items-center justify-between"><span className="text-xs text-[#A7A9B7] font-semibold ml-4">10 Endorsements|5 Recommendations</span><span className="text-2xl text-[#147BF5]"><BsEye /></span></div>
                             </div>
                         </div>
                     </div>
                     <div className="bg-white h-[75vh] rounded-3xl  ">
                         <div className="w-[96%] flex justify-between mx-auto items-center">
                             <p className="p-3 font-bold text-lg">Notable Cases</p>
-                            <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+                            <span><LuEdit2 className="text-[#147BF5] text-xl" /></span>
 
                         </div>
 
@@ -133,24 +133,24 @@ const LawyerProfile = () => {
                     <div className=" w-1/3 rounded-3xl bg-white h-48 mt-6 p-2">
                         <div className="flex w-[96%] justify-between mx-auto">
                             <p className="font-bold text-lg">Education</p>
-                            <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+                            <span><LuEdit2 className="text-[#147BF5] text-xl" /></span>
                         </div>
                         <div>
-                            <div className="flex items-center"><span className=" text-[#407BFf] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">University of San Francisco school of law</p>
+                            <div className="flex items-center"><span className=" text-[#147BF5] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">University of San Francisco school of law</p>
 
                             </div>
                             <div className="flex flex-col text-[#a7a9b7] text-xs font-semibold ml-7"><p>J.D Law</p></div>
                             <div className="flex flex-col text-[#a7a9b7] text-xs font-semibold ml-7"><p>1960 - 1963</p></div>
                         </div>
                         <div>
-                            <div className="flex items-center"><span className=" text-[#407BFf] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">California Polytechnic State University-San Luis Obispo</p>
+                            <div className="flex items-center"><span className=" text-[#147BF5] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">California Polytechnic State University-San Luis Obispo</p>
 
                             </div>
                             <div className="flex flex-col text-[#a7a9b7] text-xs font-semibold ml-7"><p>J.D Law</p></div>
                             <div className="flex flex-col text-[#a7a9b7] text-xs font-semibold ml-7"><p>1960 - 1963</p></div>
                         </div>
                         <div>
-                            <div className="flex items-center"><span className=" text-[#407BFf] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">California Polytechnic State University-San Luis Obispo</p>
+                            <div className="flex items-center"><span className=" text-[#147BF5] text-3xl"><TbPointFilled /></span> <p className="text-xs font-bold">California Polytechnic State University-San Luis Obispo</p>
 
                             </div>
 
@@ -165,13 +165,13 @@ const LawyerProfile = () => {
                 <div className="flex gap-2 items-center">
 
                     <p className="font-bold text-lg mt-4">Personal Interests </p>
-                    <span><LuEdit2 className="text-[#407BFF] text-xl mt-2" /></span>
+                    <span><LuEdit2 className="text-[#147BF5] text-xl mt-2" /></span>
                 </div>
 
                 <div className="w-56 flex gap-2">
                     {
                         ["Reading", "History", "Travel", "Sports"].map((item) => (
-                            <div className="flex gap-1 items-center p-2 bg-[#407BFF] rounded-3xl text-white"> <span className="text-sm">{item}</span></div>
+                            <div className="flex gap-1 items-center p-2 bg-[#147BF5] rounded-3xl text-white"> <span className="text-sm">{item}</span></div>
                         ))
                     }
                 </div>

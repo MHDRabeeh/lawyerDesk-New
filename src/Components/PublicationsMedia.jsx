@@ -11,7 +11,7 @@ const PublicationsMedia = () => {
         <>
         <div className=' flex gap-2 mt-2'>
         <p className="font-bold text-lg">Publications & Media Appearances</p>
-        <span><LuEdit2 className="text-[#407BFF] text-xl" /></span>
+        <span><LuEdit2 className="text-[#147BF5] text-xl" /></span>
 
         </div>
            

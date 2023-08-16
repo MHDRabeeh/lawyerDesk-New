@@ -21,7 +21,7 @@ const EnteringNumber = () => {
                     <div>
                         <img src={imageTwo} className="w-36" alt="" />
                     </div>
-                    <div><span className="text-[#407BFF] text-xl font-bold">Enter Phone Number</span></div>
+                    <div><span className="text-[#147BF5] text-xl font-bold">Enter Phone Number</span></div>
                     <div className="flex flex-col justify-center items-center text-slate-400 text-sm"><span>You will receive a 6 digit code </span>
                         <span>to verify next</span>
 
@@ -32,7 +32,7 @@ const EnteringNumber = () => {
                     <div>
                         <span className="text-sm font-[600]">Placeholder</span>
                         <div className="font-[600] text-base tracking-wider rounded-full p-2 border h-12  cursor-pointer
-                          border-[#407BFF] flex ">
+                          border-[#147BF5] flex ">
                             <div className="flex justify-between items-center">
                                <div className="flex"><img className="w-7 h-7 mx-1" src={UsaFlag} alt="" /> <span>+1</span></div>
                                 <span className="text-xl text-slate-500"><RiArrowDropDownLine /></span>
@@ -43,12 +43,12 @@ const EnteringNumber = () => {
                         </div>
                     </div>
                     <div>
-                        <button onClick={() => navigate('/otpverify')} className="text-white font-[700] text-sm   bg-[#407BFF] rounded-full p-2 w-[20rem]
-                         border-2 border-[#407BFF]">send OTP</button>
+                        <button onClick={() => navigate('/otpverify')} className="text-white font-[700] text-sm   bg-[#147BF5] rounded-full p-2 w-[20rem]
+                         border-2 border-[#147BF5]">send OTP</button>
                     </div>
                 </div>
                 <div className="font-[500] text-sm"><span>Already Joined?</span> <span
-                    className="text-[#407BFF]">Sign In here</span></div>
+                    className="text-[#147BF5]">Sign In here</span></div>
 
             </div>
         </SplashScreen>

@@ -21,7 +21,7 @@ const OtpVerify = () => {
           <div>
             <img src={EnterOtp} className="w-36" alt="" />
           </div>
-          <div className='text-[#407BFF] text-xl font-bold
+          <div className='text-[#147BF5] text-xl font-bold
            '><span>Enter OTP</span></div>
 
 
@@ -40,12 +40,12 @@ const OtpVerify = () => {
             {renterInput()}
           </div>
           <div>
-            <button onClick={() => navigate('/Home')} className="text-white font-[700] text-sm   bg-[#407BFF] rounded-full p-2 w-[20rem]
-                         border-2 border-[#407BFF]">Verify OTP</button>
+            <button onClick={() => navigate('/Home')} className="text-white font-[700] text-sm   bg-[#147BF5] rounded-full p-2 w-[20rem]
+                         border-2 border-[#147BF5]">Verify OTP</button>
           </div>
         </div>
         <div className=" text-sm font-[700]"><span>Don't receive otp?</span> <span
-          className="text-[#407BFF]">Resend OTP</span></div>
+          className="text-[#147BF5]">Resend OTP</span></div>
 
       </div>
 

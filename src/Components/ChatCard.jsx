@@ -17,7 +17,7 @@ function ChatCard() {
                 </div>
 
                 <div className=" flex flex-col gap-1 ">
-                    <div className="p-1 bg-[#407BFF] rounded-full flex items-center justify-center"> <p className="text-white text-sm font-bold ">1</p></div>
+                    <div className="p-1 bg-[#147BF5] rounded-full flex items-center justify-center"> <p className="text-white text-sm font-bold ">1</p></div>
                     <div className="text-xs text-[#A7a9b7]"> <p>14:02</p></div>
                    
                 </div>

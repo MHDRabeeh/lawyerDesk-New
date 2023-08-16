@@ -8,8 +8,8 @@ const ConxSeggestions = () => {
         <ProfilePhoto image={avatar1} size={'w-24 h-24'}/>
         <p className='text-sm font-bold'>Elon Musk</p>
         <p className='text-xs text-[#A7A9B7]'>Specialized in corporates Law</p>
-       <div className='flex gap-2'><span className='text-[#407BFF]'><FaUsers/></span> <span className='text-xs tracking-tight font-bold'>10 Mutual Connections</span></div>
-       <button className='p-[.4rem] w-[80%] font-semibold rounded-3xl text-sm text-white bg-[#407BFF]'>Click to apply</button>
+       <div className='flex gap-2'><span className='text-[#147BF5]'><FaUsers/></span> <span className='text-xs tracking-tight font-bold'>10 Mutual Connections</span></div>
+       <button className='p-[.4rem] w-[80%] font-semibold rounded-3xl text-sm text-white bg-[#147BF5]'>Click to apply</button>
     </div>
   )
 }

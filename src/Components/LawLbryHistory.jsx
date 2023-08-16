@@ -18,13 +18,13 @@ const LawLbryHistory = ({setPage}) => {
                 {
                     [1, 1, 3, 4, 5, 6].map((item,i) => (
                         <div key={i} className='bg-white h-28  rounded-3xl flex flex-col justify-around '>
-                            <div className='flex gap-3 ml-3 '><span className='text-3xl text-[#407BFF]'><AiFillMessage /> </span><p className='text-lg font-semibold '>Financial Law related constituent and the...</p></div>
+                            <div className='flex gap-3 ml-3 '><span className='text-3xl text-[#147BF5]'><AiFillMessage /> </span><p className='text-lg font-semibold '>Financial Law related constituent and the...</p></div>
                             <div className='flex justify-between w-[97%] mx-auto'>
                                 <div className='flex gap-4 ml-4'>
                                     <div className='flex gap-2 items-center'><span className='text-xs font-light'>Legal Description</span><span className='text-2xl text-green-400'><BiCheck /></span></div>
                                     <div className='flex gap-2 items-center'><span className='text-xs font-light'>Legal Description</span><span className='text-2xl text-green-400'><BiCheck /></span></div>
                                 </div>
-                                <div onClick={()=>setPage(pre=>true)} ><span className='cursor-pointer text-3xl text-[#407bff]'><IoIosArrowDroprightCircle /></span></div>
+                                <div onClick={()=>setPage(pre=>true)} ><span className='cursor-pointer text-3xl text-[#147BF5]'><IoIosArrowDroprightCircle /></span></div>
                             </div>
 
                         </div>

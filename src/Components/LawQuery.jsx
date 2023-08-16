@@ -14,7 +14,7 @@ const LawQuery = () => {
                 </div>
                 <div className=' text-xs flex justify-end w-[98%] text-[#a7a9b7]'><span>29/2000</span></div>
             </div>
-            <div className='flex justify-center items-center mt-3 '> <button className='px-40 py-3 font-semibold rounded-3xl text-white bg-[#407bff]'>Generate</button></div>
+            <div className='flex justify-center items-center mt-3 '> <button className='px-40 py-3 font-semibold rounded-3xl text-white bg-[#147BF5]'>Generate</button></div>
            
 
 

@@ -7,7 +7,7 @@ import { AiTwotoneHeart } from "react-icons/ai";
 import { FaRegComment } from 'react-icons/fa'
 import { BiShareAlt } from 'react-icons/bi'
 import { BsBookmark, BsEmojiSmile } from 'react-icons/bs'
-import {VscSend} from 'react-icons/vsc'
+import { VscSend } from 'react-icons/vsc'
 
 
 const Post = () => {
@@ -34,13 +34,13 @@ const Post = () => {
         </div>
 
         <div>
-          <p className='mt-1 text-sm  '>{text}<span className='font-semibold text-[#407bff] underline cursor-pointer '>see more</span></p>
+          <p className='mt-1 text-sm  '>{text}<span className='font-semibold text-[#147BF5] underline cursor-pointer '>see more</span></p>
         </div>
 
         <div className='flex gap-2 mt-2'>
           {
             ["#Attempt to murder", "#Trafic Law", "#Criminal Law", "#Criminal Law"].map((item, i) => (
-              <span key={i} className='rounded-3xl border border-[#407bff] text-[#407bff] px-1 text-xs  '>{item}</span>
+              <span key={i} className='rounded-3xl border border-[#147BF5] text-[#147BF5] px-1 text-xs  '>{item}</span>
             ))
           }
 
@@ -56,9 +56,9 @@ const Post = () => {
           <div className='flex flex-col text-xs  justify-center items-center font-light'><span><BiShareAlt size={30} /></span><span>Share</span></div>
           <div className='flex flex-col text-xs  justify-center items-center font-light'> <span><BsBookmark size={30} /></span><span>Save</span></div>
         </div>
-          
 
-          {/* Comment  */}
+
+        {/* Comment  */}
 
         {showComment &&
           <>
@@ -103,14 +103,14 @@ const Post = () => {
               </div>
               <div className='flex mt-3 relative items-center gap-1'>
                 <div>
-                  <ProfilePhoto  image={image1} size={`w-7`}/>
+                  <ProfilePhoto image={image1} size={`w-7`} />
                 </div>
                 <span className='absolute left-[2.28rem] top-[.4rem]'><BsEmojiSmile className='text-slate-300 ' size={20} /></span>
-                <input className=' w-[93%] rounded-3xl placeholder-slate-300 font-light text-sm border-slate-200  h-8 px-7' type="text" placeholder='Leave your thoughts here....'/>
-                <span className='absolute right-4 text-slate-300 '><VscSend size={20}/></span>
+                <input className=' w-[93%] rounded-3xl placeholder-slate-300 font-light text-sm border-slate-200  h-8 px-7' type="text" placeholder='Leave your thoughts here....' />
+                <span className='absolute right-4 text-slate-300 '><VscSend size={20} /></span>
               </div>
             </div>
-            
+
           </>}
 
 

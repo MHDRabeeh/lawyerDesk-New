@@ -22,7 +22,7 @@ const LawyerCard = () => {
                     <div className="flex items-start p-1  gap-2">
                         <div className="flex flex-col">
                             <p className="font-semibold ml-2">Hairsh Salve</p>
-                            <div className=" font-extralight  flex items-center"><span className="ml-1 text-xl "><IoLocationOutline className="text-[#407BFF]" /></span><span className="text-sm text-[#A7A9B7]">New Delhi, India</span></div>
+                            <div className=" font-extralight  flex items-center"><span className="ml-1 text-xl "><IoLocationOutline className="text-[#147BF5]" /></span><span className="text-sm text-[#A7A9B7]">New Delhi, India</span></div>
                         </div>
                         <div className="flex gap-2">
                             {/* added StarRating component */}
@@ -31,7 +31,7 @@ const LawyerCard = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="p-1 bg-[#407BFF] rounded-full flex "><span className="text-white text-xl"><AiFillMessage /></span></div>
+                    <div className="p-1 bg-[#147BF5] rounded-full flex "><span className="text-white text-xl"><AiFillMessage /></span></div>
 
                 </div>
             </div>
@@ -43,9 +43,9 @@ const LawyerCard = () => {
             </div>
             <div className="flex gap-12 ">
                 <div className="flex text-[#A7A9B7] items-center gap-1 mt-2 font-medium text-xs"><span>Top Rated</span> <span className="text-yellow-300 text-xl"><AiTwotoneStar /></span><span className="text-black text-lg ml-1 font-[600]">3.5</span> </div>
-                <div className="flex text-[#A7A9B7] items-center gap-1 mt-2 font-medium text-xs"><span>Experience</span> <span className="text-[#407BFF] text-xl"><AiTwotoneSetting /></span>  <span className="text-black text-lg ml-1 font-[600]">20</span> </div>
+                <div className="flex text-[#A7A9B7] items-center gap-1 mt-2 font-medium text-xs"><span>Experience</span> <span className="text-[#147BF5] text-xl"><AiTwotoneSetting /></span>  <span className="text-black text-lg ml-1 font-[600]">20</span> </div>
             </div>
-            <div className="flex  text-[#A7A9B7] items-center gap-1 mt-2 font-medium text-xs"><span>Speak</span> <span className="text-[#407BFF] text-xl"><TbSphere /></span>  <span className="text-black text-lg ml-1 font-[600]">Telugu</span> </div>
+            <div className="flex  text-[#A7A9B7] items-center gap-1 mt-2 font-medium text-xs"><span>Speak</span> <span className="text-[#147BF5] text-xl"><TbSphere /></span>  <span className="text-black text-lg ml-1 font-[600]">Telugu</span> </div>
 
 
         </div>

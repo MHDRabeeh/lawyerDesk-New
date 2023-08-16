@@ -17,8 +17,8 @@ const OngoingResearches = () => {
               <div className='w-[90%] flex flex-col gap-2 justify-start mx-auto'>
                 {data.map((item, index) => (
                   <div className='flex gap-2 ' key={index}>
-                    <span className='bg-[#407BFF] text-xs font-light px-3 py-1 rounded-3xl text-white text-center flex items-center'>{item.valueOne} <BiCheck className='text-white text text-lg font-semibold' /></span>
-                    <span className='bg-[#407BFF] text-xs font-light px-3 py-1 rounded-3xl text-white text-center flex items-center'>{item.valueTwo} <BiCheck className='text-white text text-lg font-semibold' /></span>
+                    <span className='bg-[#147BF5] text-xs font-light px-3 py-1 rounded-3xl text-white text-center flex items-center'>{item.valueOne} <BiCheck className='text-white text text-lg font-semibold' /></span>
+                    <span className='bg-[#147BF5] text-xs font-light px-3 py-1 rounded-3xl text-white text-center flex items-center'>{item.valueTwo} <BiCheck className='text-white text text-lg font-semibold' /></span>
                   </div>
 
                 ))}

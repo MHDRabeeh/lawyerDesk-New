@@ -58,7 +58,7 @@ const ChatMessage = () => {
 
                             {item.text && item.senderId == 2 && <div className=" flex justify-end ">
                                 <div className=" flex flex-col justify-end">
-                                    <div className="rounded-tr-xl rounded-bl-xl  rounded-tl-xl  p-3 bg-[#407BFF] mt-2 inline-block">
+                                    <div className="rounded-tr-xl rounded-bl-xl  rounded-tl-xl  p-3 bg-[#147BF5] mt-2 inline-block">
                                         <p className="text-sm text-white">{item.text}</p>
                                     </div>
                                     <div className="flex justify-end">
@@ -77,7 +77,7 @@ const ChatMessage = () => {
                 <span className="absolute top-3 left-5  "><RiAttachmentLine className="text-slate-400 text-lg" /></span>
                 <input type="text" className="w-[90%] h-10 ml-2 bg-slate-50 rounded-3xl placeholder-gray-400 px-8 placeholder-opacity-75 border-slate-100 " placeholder="write your message " />
                 <span className="absolute right-[4.5rem] top-2 text-xl text-slate-400"><BsEmojiSmile /></span>
-                <span className=" text-[#407BFF] p-2 bg-slate-50 rounded-full "><RiSendPlane2Fill className="text-2xl" /></span>
+                <span className=" text-[#147BF5] p-2 bg-slate-50 rounded-full "><RiSendPlane2Fill className="text-2xl" /></span>
 
             </div>
 

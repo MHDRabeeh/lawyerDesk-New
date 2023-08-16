@@ -22,7 +22,7 @@ const LawLbryquery = (props) => {
                   
                     {
                         showPages.map((item, index) => (
-                            <span onClick={() => handlePage(index)} key={index} className={`p-4  cursor-pointer ${index === count ? 'bg-[#407bff] text-white' : 'bg-white text-[#A7A9B7]'}  shadow  duration-200   font-light text-xs rounded-tr-xl rounded-tl-xl`}>{item.page}</span>
+                            <span onClick={() => handlePage(index)} key={index} className={`p-4  cursor-pointer ${index === count ? 'bg-[#147BF5] text-white' : 'bg-white text-[#A7A9B7]'}  shadow  duration-200   font-light text-xs rounded-tr-xl rounded-tl-xl`}>{item.page}</span>
                         ))
                     }
                 </div>

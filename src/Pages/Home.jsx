@@ -18,7 +18,7 @@ import chatimg from '../assets/Chat.jpg';
 import lawimg from '../assets/Law.jpg'
 import { useNavigate } from 'react-router-dom';
 
-const data = [{ title: "Connections", img: imgConcn ,path:"/connections"}, { title: "Chat", img: chatimg ,path:"/chat"}, { title: "Cennections", img: lawimg ,path:"/chat"}]
+const data = [{ title: "Connections", img: imgConcn ,path:"/connections",subTitle:'Manage'}, { title: "Chat", img: chatimg ,path:"/chat",subTitle:'Professional'}, { title: "Cennections", img: lawimg ,path:"/chat",subTitle:'Find'}]
 const Home = () => {
     const TaskBarData = {
         title: "News",
@@ -55,7 +55,7 @@ const Home = () => {
                         <span className='text-xl font-normal'>News Feed</span>
                         <span className='text-2xl   text-slate-500'><FaSlidersH /></span>
                     </div>
-                    <div className='h-[30vh] w-[100%] text-white rounded-3xl bg-[#407BFF] flex flex-col items-center justify-evenly mt-2'>
+                    <div className='h-[30vh] w-[100%] text-white rounded-3xl bg-[#147BF5] flex flex-col items-center justify-evenly mt-2'>
                         <div className='w-[95%] flex justify-between mx-auto items-center '>
                             <div className='flex gap-2 items-center'>
                                 <div><ProfilePhoto image={image1} /></div>
@@ -72,7 +72,7 @@ const Home = () => {
                             <p className='text-sm font-light'>On May 29. 2023, at approximately 1:00 PM, I was walking on the footpath of a street in India when I was hit by motorcycle. The <span className='font-medium underline cursor-pointer hover:text-slate-200'>see more</span></p>
 
                         </div>
-                        <div className='w-[97%] flex mx-auto gap-3 text-[#407BFF]'>
+                        <div className='w-[97%] flex mx-auto gap-3 text-[#147BF5]'>
                             {
                                 ["#Attempt to murder", "#Trafic Law", "#Criminal Law", "#Criminal Law"].map((item, i) => (
                                     <span key={i} className='rounded-3xl px-1 text-xs bg-white font-semibold'>{item}</span>
@@ -104,7 +104,7 @@ const Home = () => {
                                 <div key={index} className='w-[100%] h-[5.5rem] flex  items-center bg-white rounded-3xl cursor-pointer' onClick={()=>navigate(ele.path)}>
                                     <div className='flex gap-4 items-center px-5'>
                                         <img className='w-16 h-16' src={ele.img} alt="" />
-                                        <p className='font-semibold'>{ele.title}</p>
+                                        <p className='font-semibold'>{ele.title}</p> <span className='ml-9 text-xs text-[#a7a9b7] font-light'>{ele.subTitle}</span>
                                     </div>
                                 </div>
                             ))

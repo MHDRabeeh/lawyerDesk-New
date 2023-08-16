@@ -22,7 +22,7 @@ const LawLbryLegalDec = () => {
             </div>
             <div className='flex justify-between  items-center  mt-3 w-[95%] mx-3 '>
                 <div className='font-bold '>Not what you were expecting?</div>
-                <div onClick={()=>setModal(true)} className='flex justify-center items-center '> <button className='px-40 py-3 font-semibold rounded-3xl text-white bg-[#407bff]'>Regenerate</button></div>
+                <div onClick={()=>setModal(true)} className='flex justify-center items-center '> <button className='px-40 py-3 font-semibold rounded-3xl text-white bg-[#147BF5]'>Regenerate</button></div>
             </div>
            {modal&&<ModalLaw setModal={setModal}/>} 
            
