@@ -5,11 +5,12 @@ import LawLbryJugment from './LawLbryJugment';
 import LawLbryLegalDec from './LawLbryLegalDec';
 import LawQuery from './LawQuery';
 import LawLbryTemplates from './LawLbryTemplates';
+import LawLbryQuestions from './LawLbryQuestions';
 
 const LawLbryquery = (props) => {
     const setPage = props.setPage
     const [count, setCount] = useState(0)
-    const showPages = [{ page: "Query", status: false, cmpnt: <LawQuery /> }, { page: "Legal Dec", status: false, cmpnt: <LawLbryLegalDec /> }, { page: "Act & Laws", status: false, cmpnt: <LawLbryActLaws /> }, { page: "Judgment", status: false, cmpnt: <LawLbryJugment /> }, { page: "Templates", status: false ,cmpnt: <LawLbryTemplates />}, { page: "Questions", status: false }, { page: "Support", status: false },]
+    const showPages = [{ page: "Query", status: false, cmpnt: <LawQuery /> }, { page: "Legal Dec", status: false, cmpnt: <LawLbryLegalDec /> }, { page: "Act & Laws", status: false, cmpnt: <LawLbryActLaws /> }, { page: "Judgment", status: false, cmpnt: <LawLbryJugment /> }, { page: "Templates", status: false ,cmpnt: <LawLbryTemplates />}, { page: "Questions", status: false,cmpnt: <LawLbryQuestions /> }, { page: "Support", status: false },]
     const handlePage = (index) => {
         setCount(index)
 

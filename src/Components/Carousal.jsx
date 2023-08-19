@@ -38,6 +38,7 @@ const Carousal = () => {
             {slides.map((slide,slideIndex)=>(
               <div key={slideIndex} onClick={()=>goToSlide(slideIndex)} className='text-xl cursor-pointer text-black/30'><RxDotFilled/></div>
             ))}
+            
             </div>
         </div>
 
