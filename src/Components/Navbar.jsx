@@ -14,7 +14,7 @@ const Navbar = () => {
     const Menu = [
         { icon: <RiHome5Fill />, title: 'Home' ,path:"/Home" },
         { icon: <AiOutlineBank />, title: 'Law Library',path:'/lawLibrary' },
-        { icon: <FaScaleBalanced />, title: 'Case Management' },
+        { icon: <FaScaleBalanced />, title: 'Case Management' , path: '/CaseManagement', },
         { icon: <BsSearch />, title: 'SA Serch' },
         { icon: <FiSettings />, title: 'Settings' },
     ]
