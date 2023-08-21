@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BsFiletypeDocx } from 'react-icons/bs';
+import { MdFileCopy } from "react-icons/md";
 
 const LawLbryQuestions = () => {
     const [showPage, setShowPage] = useState(true)
@@ -11,6 +12,7 @@ const LawLbryQuestions = () => {
             <div className='w-[97%] h-[54vh]  flex flex-col justify-between bg-white  -mt-0 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl'>
                 <div className='w-[95%] mx-auto mt-3 flex justify-between  '>
                     <p className=' text-left text-lg font-bold'>Question</p>
+                    <span className='text-3xl text-[#147BF5]'><MdFileCopy /></span>
                 </div>
                 <div className='flex gap-4 ml-2 mt-1'>
                     <button onClick={() => setShowPage(true)} className={`p-3  text-sm font-light  rounded-3xl border ${showPage?"bg-[#147bf5] text-white":"text-[#b7b9a7]"}`}>To Answer</button>
