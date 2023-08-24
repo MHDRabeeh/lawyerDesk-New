@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Wrapper from '../Components/Wrapper'
 import { FaScaleBalanced } from "react-icons/fa6";
 import imgOne from '../assets/newCaseImg.jpg'
@@ -6,13 +6,17 @@ import { AiOutlinePlus } from "react-icons/ai";
 import BadgeStar from '../assets/badgeStar.jpg';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import ClickOnAny from '../assets/ClickonAnyCase.jpg'
+import CaseMgmntSummary from '../Components/CaseMgmntSummary';
 const CaseManagement = () => {
+    const [showCasePage, setShowCasePage] = useState(false)
+
     const TaskBarData = {
         title: "Case Management",
         path: '',
         icon: <FaScaleBalanced />,
         parentPath: 'Case Management'
     }
+
     return (
         <>
             <Wrapper TaskBarData={TaskBarData}>
@@ -91,15 +95,29 @@ const CaseManagement = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-white h-[83vh] rounded-3xl flex justify-center items-center'>
+                    {
+                        showCasePage ? (
+                            <div className='bg-white h-[83vh] rounded-3xl '>
 
-                        <div className='flex flex-col justify-center items-center gap-5'>
-                            <div>
-                                <img src={ClickOnAny} className='h-32' alt="" />
+                               <CaseMgmntSummary setShowCasePage={setShowCasePage}/>
                             </div>
-                            <p className='text-xl font-extralight text-gray-300 italic'>Click on any case to view detail</p>
-                        </div>
-                    </div>
+
+                        ) : (
+                            <div className='bg-white h-[83vh] rounded-3xl flex justify-center items-center'>
+
+                                <div onClick={()=> setShowCasePage(true)} className='flex flex-col justify-center items-center gap-5'>
+                                    <div>
+                                        <img src={ClickOnAny} className='h-32' alt="" />
+                                    </div>
+                                    <p className='text-xl font-extralight text-gray-300 italic'>Click on any case to view detail</p>
+                                </div>
+                            </div>
+                        )
+                    }
+
+
+
+
                 </div>
 
 
