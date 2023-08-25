@@ -32,7 +32,7 @@ const CaseManagement = () => {
                         ) : (
                             <div className='bg-white h-[83vh] rounded-3xl flex justify-center items-center'>
 
-                                <div onClick={() => setShowCasePage(true)} className='flex flex-col justify-center items-center gap-5'>
+                                <div onClick={() => setShowCasePage(true)} className='flex cursor-pointer flex-col justify-center items-center gap-5'>
                                     <div>
                                         <img src={ClickOnAny} className='h-32' alt="" />
                                     </div>
