@@ -4,7 +4,7 @@ import { FaScaleBalanced } from "react-icons/fa6";
 import imgOne from '../assets/newCaseImg.jpg'
 import { AiOutlinePlus } from "react-icons/ai";
 import BadgeStar from '../assets/badgeStar.jpg';
-import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDroprightCircle,IoIosArrowDropleftCircle } from "react-icons/io";
 import ClickOnAny from '../assets/ClickonAnyCase.jpg'
 import CaseMgmntSummary from '../Components/CaseMgmntSummary';
 const CaseManagement = () => {
@@ -22,6 +22,25 @@ const CaseManagement = () => {
             <Wrapper TaskBarData={TaskBarData}>
 
                 <div className='grid grid-cols-2 gap-3 mt-4'>
+
+                    {
+                        showCasePage ? (
+                            <div className='bg-white h-[83vh] rounded-3xl '>
+                                <CaseMgmntSummary setShowCasePage={setShowCasePage} />
+                            </div>
+
+                        ) : (
+                            <div className='bg-white h-[83vh] rounded-3xl flex justify-center items-center'>
+
+                                <div onClick={() => setShowCasePage(true)} className='flex flex-col justify-center items-center gap-5'>
+                                    <div>
+                                        <img src={ClickOnAny} className='h-32' alt="" />
+                                    </div>
+                                    <p className='text-xl font-extralight text-gray-300 italic'>Click on any case to view detail</p>
+                                </div>
+                            </div>
+                        )
+                    }
                     <div className=' h-[83vh] rounded-3xl flex flex-col gap-2'>
                         <div className=' h-[25vh] rounded-3xl bg-white grid grid-cols-2 items-center justify-center'>
 
@@ -44,50 +63,53 @@ const CaseManagement = () => {
                             </div>
                             <div className=' w-[100%] h-[40vh] mt-3 flex flex-col gap-3'>
                                 <div className='w-[95%] h-14 mx-auto rounded-xl border p-2 flex justify-between items-center'>
+
+                                    <div>
+                                        <span className='cursor-pointer text-3xl text-gray-400'><IoIosArrowDropleftCircle /></span>
+
+                                    </div>
                                     <div className='flex gap-2 items-center'>
-                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
+
+
+                                        <p className='text-xs font-light'>Case ID: TS32111</p>
                                         <p className='text-sm font-semibold'>Case No.4</p>
-                                        <p className='text-xs font-light'>Case ID: TS32111</p>
-                                    </div>
-                                    <div>
-                                        <span className='cursor-pointer text-3xl text-gray-400'><IoIosArrowDroprightCircle /></span>
-
+                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
                                     </div>
 
                                 </div>
                                 <div className='w-[95%] h-14 mx-auto rounded-xl border p-2 flex justify-between items-center'>
+                                    <div>
+                                        <span className='cursor-pointer text-3xl text-[#058EEA]'><IoIosArrowDropleftCircle /></span>
+
+                                    </div>
                                     <div className='flex gap-2 items-center'>
-                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
+                                        <p className='text-xs font-light'>Case ID: TS32111</p>
                                         <p className='text-sm font-semibold'>Case No.5</p>
-                                        <p className='text-xs font-light'>Case ID: TS32111</p>
-                                    </div>
-                                    <div>
-                                        <span className='cursor-pointer text-3xl text-[#058EEA]'><IoIosArrowDroprightCircle /></span>
-
+                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
                                     </div>
 
                                 </div>
                                 <div className='w-[95%] h-14 mx-auto rounded-xl border p-2 flex justify-between items-center'>
+                                    <div>
+                                        <span className='cursor-pointer text-3xl text-[#058EEA]'><IoIosArrowDropleftCircle /></span>
+
+                                    </div>
                                     <div className='flex gap-2 items-center'>
-                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
+                                        <p className='text-xs font-light'>Case ID: TS32111</p>
                                         <p className='text-sm font-semibold'>Case No.6</p>
-                                        <p className='text-xs font-light'>Case ID: TS32111</p>
-                                    </div>
-                                    <div>
-                                        <span className='cursor-pointer text-3xl text-[#058EEA]'><IoIosArrowDroprightCircle /></span>
-
+                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
                                     </div>
 
                                 </div>
                                 <div className='w-[95%] h-14 mx-auto rounded-xl border p-2 flex justify-between items-center'>
-                                    <div className='flex gap-2 items-center'>
-                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
-                                        <p className='text-sm font-semibold'>Case No.7</p>
-                                        <p className='text-xs font-light'>Case ID: TS32111</p>
-                                    </div>
                                     <div>
-                                        <span className='cursor-pointer text-3xl text-[#058EEA]'><IoIosArrowDroprightCircle /></span>
+                                        <span className='cursor-pointer text-3xl text-[#058EEA]'><IoIosArrowDropleftCircle /></span>
 
+                                    </div>
+                                    <div className='flex gap-2 items-center'>
+                                        <p className='text-xs font-light'>Case ID: TS32111</p>
+                                        <p className='text-sm font-semibold'>Case No.7</p>
+                                        <img src={BadgeStar} className='w-7 h-7' alt="" />
                                     </div>
 
                                 </div>
@@ -95,25 +117,7 @@ const CaseManagement = () => {
                             </div>
                         </div>
                     </div>
-                    {
-                        showCasePage ? (
-                            <div className='bg-white h-[83vh] rounded-3xl '>
 
-                               <CaseMgmntSummary setShowCasePage={setShowCasePage}/>
-                            </div>
-
-                        ) : (
-                            <div className='bg-white h-[83vh] rounded-3xl flex justify-center items-center'>
-
-                                <div onClick={()=> setShowCasePage(true)} className='flex flex-col justify-center items-center gap-5'>
-                                    <div>
-                                        <img src={ClickOnAny} className='h-32' alt="" />
-                                    </div>
-                                    <p className='text-xl font-extralight text-gray-300 italic'>Click on any case to view detail</p>
-                                </div>
-                            </div>
-                        )
-                    }
 
 
 

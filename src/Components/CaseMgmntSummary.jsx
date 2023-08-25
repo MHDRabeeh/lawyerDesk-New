@@ -52,7 +52,6 @@ const CaseMgmntSummary = ({setShowCasePage}) => {
                 <input type="text" className="w-[90%] h-10 ml-2 bg-slate-50 rounded-3xl placeholder-gray-400 px-8 placeholder-opacity-75 border-slate-100 " placeholder="write your message " />
                 <span className="absolute right-[4.5rem] top-2 text-xl text-slate-400"><BsEmojiSmile /></span>
                 <span className=" text-[#147BF5] p-2 bg-slate-50 rounded-full "><RiSendPlane2Fill className="text-2xl" /></span>
-
             </div>
         </div>
     )
