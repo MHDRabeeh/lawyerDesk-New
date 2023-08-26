@@ -1,7 +1,4 @@
 import React from 'react'
-import { FaScaleBalanced } from "react-icons/fa6";
-import { MdKeyboardArrowLeft } from 'react-icons/md'
-import CaseMagntNavigation from './CaseMagntNavigation';
 import { RiAttachmentLine } from "react-icons/ri";
 import { BsEmojiSmile } from 'react-icons/bs'
 import { RiSendPlane2Fill } from 'react-icons/ri'
@@ -25,17 +22,18 @@ const CaseMgmntSummary = ({setShowCasePage}) => {
         }
         
     ]
+    const showPage=[]
     return (
         <div className='p-3'>
-            <div className='flex gap-3 item-center '>
+            {/* <div className='flex gap-3 item-center '>
                 <div onClick={()=>setShowCasePage(false)}><span><MdKeyboardArrowLeft size={30} /></span></div>
                 <div className='p-2 bg-[#147BF5] rounded-3xl text-white'> <span><FaScaleBalanced size={25} /></span></div>
                 <div className='text-2xl font-bold mt-1'><p>Case No. 1</p></div>
-            </div>
+            </div> */}
 
-            <CaseMagntNavigation />
+        
 
-            <div className='mt-3 flex flex-col gap-2 h-[61vh] '>
+            <div className='mt-3 flex flex-col gap-2 h-[60vh]  '>
                 {
                     text.map((item,index) => (
                         <div key={index} className='w-[98%] mx-auto  border border-gray-200 shadow rounded-3xl h-auto p-3 '>
@@ -47,7 +45,7 @@ const CaseMgmntSummary = ({setShowCasePage}) => {
                 }
 
             </div>
-            <div className="w-[97%] h-10 mt-1 mx-auto flex justify-around relative items-center">
+            <div className="w-[97%] h-10  mx-auto flex justify-around relative items-center mb-3">
                 <span className="absolute top-3 left-5  "><RiAttachmentLine className="text-slate-400 text-lg" /></span>
                 <input type="text" className="w-[90%] h-10 ml-2 bg-slate-50 rounded-3xl placeholder-gray-400 px-8 placeholder-opacity-75 border-slate-100 " placeholder="write your message " />
                 <span className="absolute right-[4.5rem] top-2 text-xl text-slate-400"><BsEmojiSmile /></span>
