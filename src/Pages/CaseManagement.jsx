@@ -24,25 +24,7 @@ const CaseManagement = () => {
 
                 <div className='grid grid-cols-3 gap-3 mt-4'>
 
-                    {
-                        showCasePage ? (
-                            <div className='bg-white h-[83vh] col-span-2 rounded-3xl '>
-                                {/* <CaseMgmntSummary setShowCasePage={setShowCasePage} /> */}
-                                <CaseMagntNavigation setShowCasePage={setShowCasePage} />
-                            </div>
-
-                        ) : (
-                            <div className='bg-white h-[83vh] rounded-3xl col-span-2 flex justify-center items-center'>
-
-                                <div onClick={() => setShowCasePage(true)} className='flex cursor-pointer flex-col justify-center items-center gap-5'>
-                                    <div>
-                                        <img src={ClickOnAny} className='h-32' alt="" />
-                                    </div>
-                                    <p className='text-xl font-extralight text-gray-300 italic'>Click on any case to view detail</p>
-                                </div>
-                            </div>
-                        )
-                    }
+                    
                     <div className=' h-[83vh] rounded-3xl col-span-1 flex flex-col gap-2'>
                         <div className=' h-[25vh] rounded-3xl bg-white grid grid-cols-2 items-center justify-center'>
 
@@ -58,6 +40,7 @@ const CaseManagement = () => {
                             </div>
 
                         </div>
+
                         <div className=' bg-white rounded-3xl h-[58vh] p-2'>
                             <div className='flex gap-2 mt-2 w-[95%] mx-auto'>
                                 <button className='p-3 text-xs rounded-3xl  bg-[#147bf5] text-white font-light'>Recently Added</button>
@@ -70,7 +53,7 @@ const CaseManagement = () => {
 
 
                                         <img src={BadgeStar} className='w-7 h-7' alt="" />
-                                        <p className='text-sm font-semibold'>Case No.4</p>
+                                        <p className='text-sm font-semibold'>Case No.1</p>
                                         <p className='text-xs font-light'>Case ID: TS32111</p>
                                     </div>
 
@@ -84,7 +67,7 @@ const CaseManagement = () => {
 
 
                                         <img src={BadgeStar} className='w-7 h-7' alt="" />
-                                        <p className='text-sm font-semibold'>Case No.4</p>
+                                        <p className='text-sm font-semibold'>Case No.2</p>
                                         <p className='text-xs font-light'>Case ID: TS32111</p>
                                     </div>
 
@@ -98,7 +81,7 @@ const CaseManagement = () => {
 
 
                                         <img src={BadgeStar} className='w-7 h-7' alt="" />
-                                        <p className='text-sm font-semibold'>Case No.4</p>
+                                        <p className='text-sm font-semibold'>Case No.3</p>
                                         <p className='text-xs font-light'>Case ID: TS32111</p>
                                     </div>
 
@@ -123,7 +106,25 @@ const CaseManagement = () => {
                             </div>
                         </div>
                     </div>
+                    {
+                        showCasePage ? (
+                            <div className='bg-white h-[83vh] col-span-2 rounded-3xl '>
+                                
+                                <CaseMagntNavigation setShowCasePage={setShowCasePage} />
+                            </div>
 
+                        ) : (
+                            <div className='bg-white h-[83vh] rounded-3xl col-span-2 flex justify-center items-center'>
+
+                                <div onClick={() => setShowCasePage(true)} className='flex cursor-pointer flex-col justify-center items-center gap-5'>
+                                    <div>
+                                        <img src={ClickOnAny} className='h-32' alt="" />
+                                    </div>
+                                    <p className='text-xl font-extralight text-gray-300 italic'>Click on any case to view detail</p>
+                                </div>
+                            </div>
+                        )
+                    }
 
 
 
